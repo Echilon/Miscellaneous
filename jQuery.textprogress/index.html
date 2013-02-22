@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery Textbox Progress Meter Demo</title>
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap.no-icons.min.css">
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/ui-lightness/jquery-ui.css">
+    </head>
+    <body>
+		<div class="container">
+			<div class="well form-horizontal">
+				<h3>Options</h3>
+				<div class="control-group">
+					<label class="control-label">Format</label>
+					<div class="controls">
+						<label class="radio" for="radFormatCurTotal">
+							<input type="radio" id="radFormatCurTotal" name="format" checked="checked"/>
+							{current}/{total}
+						</label>
+						<label class="radio" for="radFormatCur">
+							<input type="radio" id="radFormatCur" name="format"/>
+							{current}
+						</label>
+						<label class="radio" for="radFormatPercent">
+							<input type="radio" id="radFormatPercent" name="format"/>
+							{percent}
+						</label>
+					</div>
+				</div>
+				<div class="control-group controls">
+					<label class="checkbox" for="chkOverLength">
+						<input type="checkbox" id="chkOverLength"/>
+						Allow Over Length
+					</label>
+				</div>
+				<div class="control-group controls">
+					<label class="checkbox" for="chkShowCount">
+						<input type="checkbox" id="chkShowCount" checked="checked"/>
+						Show Count
+					</label>
+				</div>
+				<button id="btnDestroy">Destroy</button>
+			</div>
+			
+			<div class="form-horizontal">
+				<div class="control-group">
+					<label for="txtBody" class="control-label">Enter some text!</label>
+					<div class="controls">
+						<textarea name="txtBody" rows="5" cols="40" id="txtBody" class="span8"></textarea>
+						<div id="progress" class="span8" style="margin-left:0"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="jquery.textprogress.js"></script>
+		<script type="text/javascript" src="demo.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#progress').textprogress({textbox: 'txtBody', allowOverLength: false});
+			});
+		</script>
+    </body>
+</html>
