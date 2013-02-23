@@ -40,3 +40,21 @@ Documentation at http://www.leghumped.com/blog/2012/10/31/jquery-stylesheet-swit
 * **servicePath**: The path to the web service used to save theme preferences
 * **themes**: An array of theme name/array pairs. The <em>folder</em> parameter should be a subdirectory of <em>baseDirectory</em>.
 
+##jQuery.textprogress
+
+A jQuery progress meter that fills up as text is entered into a textarea or input.
+
+Documentation at http://www.leghumped.com/2013/02/22/jquery-text-progress-meter/
+
+###Options
+
+* **messageFormat**: The format for the count label. Available placeholders are {current}, {total} and {percent}
+* **showCount**: true/false - Whether or not to display a total of the current length/maximum allowed length.
+* **max**: The maximum allowed length
+* **allowOverLength**: true/false - Whether or not to prevent more text being entered than allowed.
+* **classes**: An object containing two keys:
+
+  * **standar**: The progress bar class if less than the allowed length of text is entered.
+  * **over**: The class if equal to or more than the allowed text length is entered
+
+* **textbox**: The textbox/input element to measure.
