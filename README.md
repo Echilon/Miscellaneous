@@ -53,8 +53,7 @@ Documentation at http://www.leghumped.com/2013/02/22/jquery-text-progress-meter/
 * **max**: The maximum allowed length
 * **allowOverLength**: true/false - Whether or not to prevent more text being entered than allowed.
 * **classes**: An object containing two keys:
-
-  * **standar**: The progress bar class if less than the allowed length of text is entered.
+  * **standard**: The progress bar class if less than the allowed length of text is entered.
   * **over**: The class if equal to or more than the allowed text length is entered
 
 * **textbox**: The textbox/input element to measure.
