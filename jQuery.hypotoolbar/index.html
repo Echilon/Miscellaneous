@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery Toolbar Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <style type="text/css">
+         li { float: left; list-style: none; margin: 5px; }
+         ul { margin: 10px 0; padding: 0; }
+        </style>
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/themes/ui-lightness/jquery-ui.css">
+    </head>
+    <body>
+        <ul id="toolbar" class="toolbar ui-helper-clearfix">
+            <li><a id="btnName">Name</a></li>
+			<li><a id="btnAddress">Address</a></li>
+			<li><a id="btnPhone">Phone</a></li>
+			<li><a id="btnEmail">Email</a></li>
+        </ul>
+        <textarea name="txtBody" rows="5" cols="40" id="txtBody" class="span8"></textarea>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+        <script src="jquery.mb.browser.js"></script>
+		<script src="jquery.hypotoolbar.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				var buttons = [
+					{ 'buttonId':'btnName', 'insertionText':'%%NAME%%' },
+					{ 'buttonId':'btnAddress', 'insertionText':'%%ADDRESS%%' },
+					{ 'buttonId':'btnPhone', 'insertionText':'%%PHONE%%' },
+					{ 'buttonId':'btnEmail', 'insertionText':'%%EMAIL%%' }
+				];
+				$('#toolbar').hypotoolbar(buttons, 'txtBody');
+			});
+		</script>
+    </body>
+</html>
