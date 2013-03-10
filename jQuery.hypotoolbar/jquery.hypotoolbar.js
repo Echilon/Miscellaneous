@@ -53,4 +53,4 @@ While jQuery provides a lot of great functionality, there's nothing to allow a s
             });
         });
     };    
-})(jQuery);
+})(jQuery);lnzb
