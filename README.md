@@ -3,6 +3,10 @@ Miscellaneous
 
 Miscellaneous code from various platforms
 
+##ActiveDirectoryAvatar
+
+An ASP.NET handler which retrieves, resizes, then caches locally an image for a user from Active Directory. Two query string parameter are required, **size** and **username** which is the sAMAccountName.
+
 ##CollapsiblePanel
 
 Callable on a container selector. Toggles the container to open/closed when the header is clicked. Needs the following structure on the page:
